@@ -127,6 +127,7 @@
     <ClCompile Include="Line.cpp" />
     <ClCompile Include="MyForm.cpp" />
     <ClCompile Include="Hexagon.cpp" />
+    <ClCompile Include="Polygon.cpp" />
     <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="Square.cpp" />
     <ClCompile Include="Triangle.cpp" />

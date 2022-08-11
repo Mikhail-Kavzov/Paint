@@ -4,8 +4,8 @@ namespace ClFig {
 
 		void Ellipse::Draw(Graphics^ gr) 
 		{
-			gr->DrawEllipse(gcnew Pen(PenColor, PenWidth), x, y, width, height);
 			gr->FillEllipse(gcnew SolidBrush(BrColor), x, y, width, height);
+			gr->DrawEllipse(gcnew Pen(PenColor, PenWidth), x, y, width, height);			
 		}
 		bool Ellipse::CheckArea(int x, int y)  {
 			;
@@ -29,11 +29,11 @@ namespace ClFig {
 			height = y - this->y;
 		}
 
-		Ellipse::Ellipse(Color PenColor, Color BrColor, float PenWidth, int x, int y) :Closed(PenColor, BrColor, PenWidth)
+		Ellipse::Ellipse(Color PenColor, Color BrColor, float PenWidth, int x, int y) :Closed(PenColor, BrColor, PenWidth),x(x),y(y)
 		{
-			this->x = x;
-			this->y = y;
 		}
+
+		
 
 	
 }

@@ -2,13 +2,11 @@
 #using <system.drawing.dll>
 #include<iostream>
 #include<cmath>
-const int eps = 1;
-const int dest = 5;
-#pragma once
-#using <system.drawing.dll>
-#include<iostream>
-#include <cmath>
+
+
 namespace ClFig{
+	const int eps = 1;
+	const int dest = 5;
 	using namespace System::Drawing;
 public  ref  class Figure {
 	protected:

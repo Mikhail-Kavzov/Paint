@@ -1,8 +1,6 @@
 #pragma once
 #include "FigureDeclarations.h"
 
-
-
 namespace OOP1 {
 
 	using namespace System;

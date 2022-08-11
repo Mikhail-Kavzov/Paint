@@ -6,9 +6,7 @@ namespace ClFig {
 	{
 
 	public:
-		bool CheckArea(int x, int y) override;
 		void ReSet(int x, int y) override;
-		void Draw(Graphics^ gr) override;
 		bool CheckRubbish() override;
 		Hexagon(Color PenColor, Color BrColor, float PenWidth, int x, int y);
 	};

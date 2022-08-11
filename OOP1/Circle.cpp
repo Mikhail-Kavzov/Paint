@@ -1,10 +1,7 @@
 #include "Circle.h"
 
 namespace ClFig {
-	void Circle::Draw(Graphics^ gr)
-	{
-		Ellipse::Draw(gr);
-	}
+	
 	bool Circle::CheckArea(int x, int y) {
 		int r = width / 2;
 		int x0 = this->x + r;
@@ -15,10 +12,6 @@ namespace ClFig {
 		return false;
 
 	}
-	bool Circle::CheckRubbish() 
-	{
-		return Figure::CheckGarbage(x, y, x + width, y + height);
-	}
 	void Circle::ReSet(int x, int y)
 	{
 		width = x - this->x;
@@ -26,8 +19,8 @@ namespace ClFig {
 		if ((x<this->x && y>this->y) || (x > this->x && y < this->y))
 			height = -height;
 
-
 	}
 	Circle::Circle(Color PenColor, Color BrColor, float PenWidth, int x, int y) :Ellipse(PenColor, BrColor, PenWidth, x, y)
-	{}
+	{
+	}
 }
